@@ -3,7 +3,7 @@ use strict;
 use warnings;
 package WWW::Selenium::Selenese;
 BEGIN {
-  $WWW::Selenium::Selenese::VERSION = '0.003';
+  $WWW::Selenium::Selenese::VERSION = '0.004';
 }
 
 1;
@@ -17,7 +17,7 @@ WWW::Selenium::Selenese - turns baubles into trinkets
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 AUTHOR
 

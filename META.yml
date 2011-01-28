@@ -13,9 +13,25 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: WWW-Selenium-Selenese
-version: 0.003
+version: 0.004
 x_Dist_Zilla:
   plugins:
+    -
+      class: Dist::Zilla::Plugin::Git::Check
+      name: '@Filter/Check'
+      version: 1.102810
+    -
+      class: Dist::Zilla::Plugin::Git::Commit
+      name: '@Filter/Commit'
+      version: 1.102810
+    -
+      class: Dist::Zilla::Plugin::Git::Tag
+      name: '@Filter/Tag'
+      version: 1.102810
+    -
+      class: Dist::Zilla::Plugin::Git::Push
+      name: '@Filter/Push'
+      version: 1.102810
     -
       class: Dist::Zilla::Plugin::GatherDir
       name: '@Filter/@Basic/GatherDir'
@@ -127,22 +143,6 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Git::Push
       name: '@Filter/@Git/Push'
-      version: 1.102810
-    -
-      class: Dist::Zilla::Plugin::Git::Check
-      name: '@Filter/Check'
-      version: 1.102810
-    -
-      class: Dist::Zilla::Plugin::Git::Commit
-      name: '@Filter/Commit'
-      version: 1.102810
-    -
-      class: Dist::Zilla::Plugin::Git::Tag
-      name: '@Filter/Tag'
-      version: 1.102810
-    -
-      class: Dist::Zilla::Plugin::Git::Push
-      name: '@Filter/Push'
       version: 1.102810
     -
       class: Dist::Zilla::Plugin::FakeRelease
